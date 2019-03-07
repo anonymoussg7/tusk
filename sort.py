@@ -3,14 +3,14 @@ def sort(list,n):
   l=0
   u=len(list)
   for i in range(0,len(list)):
-        m=(l+u)//2
-        if len(m)==n:
+        mid=(l+u)//2
+        if len(mid)==n:
           return True
         else:
-            if len(m)>n:
-              l=m
+            if len(mid)>n:
+              l=mid
             else:
-              u=m
+              u=mid
 list=[2,4,6,8,20,13]
 n=20
 if sort(list,n):
